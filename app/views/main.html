@@ -1,0 +1,14 @@
+<div class="hero-unit">
+  <h1>'Allo, 'Allo!</h1>
+  <p>You now have</p>
+  <p>{{status}}</p>
+  <ul>
+      <li ng-repeat="thing in messages">{{thing.text}} <span><a href="#" ng-click="remove(thing)" eat-click>Remove</a> </span> </li>    
+  </ul>
+  <input ng-model="newMessage" type="text" />
+  <button type="submit" ng-click="addMessage()">Send</button>
+  <p>installed.</p>
+  <h3>Enjoy coding! - Yeoman</h3>
+  <button ng-click="login()">Login</button>
+  <button ng-click="twLogin()">Login with Twitter</button>
+</div>
