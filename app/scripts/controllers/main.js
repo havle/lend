@@ -24,10 +24,11 @@ angular.module('lendApp')
     }
 
     $scope.login = function(){
-    	loginService.login('password', {
-                     email: "test@t.com",
-                     password: "pass",
-                     rememberMe: true
-                  });
+    	// log("Logging in")
+    	loginService.login($scope.userName, $scope.userPass, null, alert("Failed"));
+    }
+
+    $scope.createAccount = function(){
+    	
     }
   }]);
